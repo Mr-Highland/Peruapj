@@ -4,7 +4,23 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
+   
+}
+/* common */
+
+.row{
+
+max-width: 800px;
+}
+
+.col{
+
+}
+.col-third{
+    width: calc(100%/3);
+    float: left;
 }
 
 #main{
@@ -34,8 +50,9 @@ display:inline-block;
     text-transform: uppercase;
 }
 #nav li:hover a{
-   background-color:white;
-   color:#6495ED;
+   background-color:	white
+   ;
+   color:		#6495ED;;
    display: inline-block;
  
 
@@ -53,7 +70,66 @@ background: url(/Peruapj/assets/img/Tk3.jpg) top center/contain no-repeat ;
 #content{
 
 }
+/* wishes-secion */
+.happybirthday{
+    background-image: linear-gradient(0, #E0FFFF, white);
+    text-align: center;
+    padding: 64px;
+    font-size: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+
+}
+.cake {
+    color: #F08080;
+    font-size: 90px;
+}
+.full-heart {
+    padding: 8px;
+    color: red;
+}
+/* end wishes-section */
+/* memories-section */
+.memories-section{
+    background-image: linear-gradient(0,#AFEEEE,#E0FFFF);
+    padding: 72px;
+}
+.mem-part {
+    margin-right: auto;
+    margin-left: auto;
+}
+.mem-part::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.memories-section .col img{
+    width: 100%;
+    border-radius: 4%;
+}
+.memories-section .item{
+    padding: 16px;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 32px;
+    color: #DC143C;
+}
+.body-section {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    color: #DC143C;
+}
+/* end memories section */
+
+/* message-section */
 .message-section{
+    background-image: linear-gradient(0, #6495ED ,#AFEEEE);
+    color:#DC143C;
     display: flex;
     width: 100%;
     height: 500px;
@@ -70,11 +146,87 @@ background: url(/Peruapj/assets/img/Tk3.jpg) top center/contain no-repeat ;
     cursor: pointer;
 }
 .mess:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .heart{
     
 }
-#footer{
+/* end message sections */
+/* message-pop-up */
+.message-pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.message-pop-up .mess-container{
+    width: 700px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    height: 350px;
+    background-image: linear-gradient(180deg,white,	#B0E0E6);
+   
+}
+.mess-container .day{
+font-style: italic;
+}
+.text-cover{
+    padding: 16px;
+}
+.text-cover .close-btn{
+    right: 0;
+    top: 0;
+    padding: 16px;
+    position: absolute;
+}
+.text-cover .close-btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.mess-container{
+    animation: messmove ease 0.5s;
+}
+.mess-container .paragraph{
+    line-height: 1.6;
+   text-align: justify;
+ padding: 32px;
+ margin-top: 16px;
 
+}
+.mess-container .paragraph i{
+    color: red;
+}
+.mess-container .gift{
+ 
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+.open{
+    display: flex;
+}
+#footer{
+text-align: center;
+color: rgb(141, 136, 136);
+padding: 64px;
+font-size: 15px;
+}
+#footer i{
+    padding: 16px;
+}
+
+@keyframes messmove{
+    from{
+transform: translateY(-140px);
+opacity: 0;
+    }
+    to {
+transform: translateY(0);
+opacity: 1;
+    }
 }

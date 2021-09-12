@@ -4,19 +4,21 @@
 <head>
     <title>Page này để nói yêu Kim <3 </title>
             <meta charset="utf-8">
+            
             <link rel="stylesheet" href="./assets/css/style.css">
             <link rel="stylesheet" href="./assets/Fonts/themify-icons/themify-icons.css">
+            <script src="https://kit.fontawesome.com/9ed91d726c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  
+
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Piture</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">More</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#wish">Wish</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#message">Message</a></li>
             </ul>
 
         </div>
@@ -24,20 +26,115 @@
 
         </div>
         <div id="content">
-            <div class="message-section">
+            <!-- Begin: wishes-section -->
+            <div id="wish" class="happybirthday">
+                <div class="birthday">
+
+                    <div class="cake-cover">
+
+                        <i class="cake fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="wish-cover">
+
+                        <p class="birthday-wish">Happy birthday my babe<i class="full-heart fas fa-heart"></i> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End: wishes-section -->
+
+            <!-- Begin: memories-section -->
+            <div id="memories" class="memories-section">
+                <h2 class="header">Memories <i class="fas fa-grin-wink"></i></h2>
+                <div class="row mem-part">
+                    <div class="col col-third item">
+                        <img src="./assets/img/thefirstday.jpg" alt="Ngày đầu tiên đi chơiii">
+                        <div class="body-section">
+                            <h3>Ngày đầu tiên đi chơi nèe</h3>
+                            <p>Bàn tay được sưởi ấm sau bao ngày :3 </p>
+                            <p>Hun má bé lần đầu nữa nè </p>
+                        </div>
+                    </div>
+                    <div class="col col-third item">
+                        <img src="./assets/img/thefirstday2.jpg" alt="">
+                        <div class="body-section">
+                            <h3>Đầm sen sau quen nè </h3>
+                            <p>Hun nhao trên đu quay nè</p>
+                            <p>Ngồi bên bờ hồ nè</p>
+                        </div>
+                    </div>
+                    <div class="col col-third item">
+                        <img src="./assets/img/noen.jpg" alt="">
+                        <div class="body-section">
+                            <h3>Nô en nèe </h3>
+                            <p>Lúc đi hết mình...</p>
+                            <p>... Lúc về khóc tu tu </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mem-part">
+                    <div class="col col-third item">
+                        <img src="./assets/img/mybirthday.jpg" alt="Ngày đầu tiên đi chơiii">
+                        <div class="body-section">
+                            <h3>Sinh nhật anh nè</h3>
+                            <p>Uống strongbow lun ghê chưa </p>
+                            <p>Sing nhật dui nhất của anh </p>
+                        </div>
+                    </div>
+                    <div class="col col-third item">
+                        <img src="./assets/img/valentine.jpg" alt="">
+                        <div class="body-section">
+                            <h3>Valentine đầu tiên có ny nè </h3>
+                            <p>Kêu cái pizza ngon lành</p>
+                            <p>Mà ngán thấy bà nội lun</p>
+                        </div>
+                    </div>
+                    <div class="col col-third item">
+                        <img src="./assets/img/thelastday.jpg" alt="">
+                        <div class="body-section">
+                            <h3>Trước ngày chia ly </h3>
+                            <p>Hun trước nhà anh dui hem </p>
+                            <p>Chẹp chẹp mlem mlem </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End: memories-section -->
+
+
+            <!-- Begin message-section -->
+            <div id="message" class="message-section">
                 <div class="test">
 
                     <h3 class="message">A message for you <span class="heart ti-heart"></span> </h3>
-                    <div class="mess">
+                    <div class="mess js-mess">
                         <i class=" ti-email"></i>
                     </div>
                 </div>
             </div>
+            <!-- Begin message-section -->
         </div>
         <div id="footer">
-
+            <p><i class="ti-gift"></i>By Mr.Highland</p>
+        </div>
+        <div class="message-pop-up js-pop-up">
+            <div class="mess-container js-container">
+                <div class="text-cover">
+                    <i class="gift fas fa-gift"></i>
+                    <i class="close-btn ti-close js-close"></i>
+                    <p class="day">11/09/2021 </p>
+                    
+                    <p class="paragraph">Chúc mừng sinh nhật bé yêu 19 tủi nhoooo, bé yêu càng lớn càng xinh đẹp, giỏi giang nhoaaa.
+                    Anh hong giỏi viết văn .Anh chỉ muốn bé hiểu là anh thương bé nhiều lắm. Anh làm cái web này tuy
+                    còn sơ sài nhưng mà anh làm bằng cả trái tim để tặng bé ó. Anh có thể vì bé mà xây một cái web thì 
+                    anh cũng có thể vì bé mà xây cho bé thế giới của tụi mình. Vậy bé có muốn làm bà chủ trong thế giới đó hong? Bé làm người yêu anh nha? 
+                    <i class="fas fa-heart"></i>
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <script src="./assets/javascript/main.js"></script>
     </div>
 </body>
 
